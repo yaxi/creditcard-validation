@@ -70,6 +70,7 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
     implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.constraintlayout.compse)
 
     testImplementation(libs.junit)
     testImplementation(libs.hilt.android.testing)

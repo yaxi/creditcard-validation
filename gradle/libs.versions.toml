@@ -1,16 +1,17 @@
 [versions]
-agp = "8.4.1"
+agp = "8.4.2"
 kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.8.1"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.2"
 activityCompose = "1.9.0"
 composeBom = "2024.06.00"
 hilt = "2.51.1"
 ksp = "2.0.0-1.0.22"
-coroutines = "1.7.3"
+coroutines = "1.8.0"
+constraintLayout = "1.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +33,7 @@ hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testi
 hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name= "kotlinx-coroutines-android", version.ref = "coroutines"}
 kotlinx-coroutines-android-test = { group = "org.jetbrains.kotlinx", name= "kotlinx-coroutines-android-test", version.ref = "coroutines"}
+constraintlayout-compse = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintLayout" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
