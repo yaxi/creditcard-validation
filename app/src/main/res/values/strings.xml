@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CreditCardValidation</string>
+    <string name="placeholder_card_num">Enter Card Number Here</string>
+    <string name="title">Credit Card Number Validator</string>
+    <string name="message">Credit Card Type: %1$s</string>
+    <string name="message_error">Card Number error\n%1$s\nPlease check input</string>
+
 </resources>

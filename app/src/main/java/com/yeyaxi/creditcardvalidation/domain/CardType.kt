@@ -5,5 +5,6 @@ enum class CardType {
     DISCOVER,
     MASTERCARD,
     VISA,
-    NONE
+    NONE,
+    UNKNOWN
 }
