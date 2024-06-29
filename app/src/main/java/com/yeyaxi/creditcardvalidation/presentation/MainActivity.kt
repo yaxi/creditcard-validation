@@ -1,4 +1,4 @@
-package com.yeyaxi.creditcardvalidation.ui
+package com.yeyaxi.creditcardvalidation.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
