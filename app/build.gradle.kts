@@ -38,6 +38,11 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+        freeCompilerArgs = listOf(
+            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+            "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",
+            "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+        )
     }
     buildFeatures {
         compose = true
@@ -64,10 +69,12 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+    implementation(libs.kotlinx.coroutines.android)
 
     testImplementation(libs.junit)
     testImplementation(libs.hilt.android.testing)
     kspTest(libs.hilt.android.compiler)
+    testImplementation(libs.kotlinx.coroutines.android.test)
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
