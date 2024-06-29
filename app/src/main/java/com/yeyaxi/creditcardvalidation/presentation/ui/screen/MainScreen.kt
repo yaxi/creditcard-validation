@@ -1,5 +1,6 @@
 package com.yeyaxi.creditcardvalidation.presentation.ui.screen
 
+import android.content.res.Configuration
 import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -22,6 +23,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
@@ -89,12 +91,13 @@ fun MainScreen(
                         bottom = messageRef.top
                     )
                     width = Dimension.ratio("1.586:1")
-                    height = Dimension.value(220.dp)
+                    height = Dimension.value(210.dp)
                 },
                 viewState = viewState,
                 onValueChange = onValueChange
             )
             if (viewState.cardNum.isNotEmpty()) {
+                val configuration = LocalConfiguration.current
                 Text(
                     modifier = Modifier.constrainAs(messageRef) {
                         top.linkTo(cardRef.bottom, margin = 16.dp)
@@ -108,7 +111,11 @@ fun MainScreen(
                     } else {
                         stringResource(id = R.string.message, viewState.cardType.name)
                     },
-                    style = MaterialTheme.typography.titleLarge,
+                    style = if (configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+                        MaterialTheme.typography.titleLarge
+                    } else {
+                        MaterialTheme.typography.titleMedium
+                    },
                     color = if (viewState.error != null) {
                         MaterialTheme.colorScheme.error
                     } else {
