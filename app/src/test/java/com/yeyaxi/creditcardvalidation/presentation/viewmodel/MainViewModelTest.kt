@@ -2,11 +2,10 @@ package com.yeyaxi.creditcardvalidation.presentation.viewmodel
 
 import CoroutineTestRule
 import app.cash.turbine.test
-import com.yeyaxi.creditcardvalidation.data.CardType
+import com.yeyaxi.creditcardvalidation.domain.CardType
 import com.yeyaxi.creditcardvalidation.domain.interactor.ValidationInteractor
 import com.yeyaxi.creditcardvalidation.domain.util.CoroutineDispatchers
 import io.mockk.coEvery
-import io.mockk.every
 import io.mockk.mockk
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertNull

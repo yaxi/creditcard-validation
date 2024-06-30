@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.yeyaxi.creditcardvalidation.R
-import com.yeyaxi.creditcardvalidation.data.CardType
+import com.yeyaxi.creditcardvalidation.domain.CardType
 import com.yeyaxi.creditcardvalidation.domain.util.Constants
 import com.yeyaxi.creditcardvalidation.presentation.ui.theme.CreditCardValidationTheme
 import com.yeyaxi.creditcardvalidation.presentation.ui.theme.creditCardFamily

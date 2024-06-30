@@ -1,6 +1,6 @@
 package com.yeyaxi.creditcardvalidation.domain.interactor
 
-import com.yeyaxi.creditcardvalidation.data.CardType
+import com.yeyaxi.creditcardvalidation.domain.CardType
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertFalse
 import junit.framework.TestCase.assertNull

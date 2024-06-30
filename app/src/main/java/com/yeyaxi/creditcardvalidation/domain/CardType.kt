@@ -1,4 +1,4 @@
-package com.yeyaxi.creditcardvalidation.data
+package com.yeyaxi.creditcardvalidation.domain
 
 enum class CardType {
     AMEX,

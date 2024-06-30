@@ -2,7 +2,7 @@ package com.yeyaxi.creditcardvalidation.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.yeyaxi.creditcardvalidation.data.CardType
+import com.yeyaxi.creditcardvalidation.domain.CardType
 import com.yeyaxi.creditcardvalidation.domain.util.CoroutineDispatchers
 import com.yeyaxi.creditcardvalidation.domain.interactor.ValidationInteractor
 import com.yeyaxi.creditcardvalidation.presentation.ui.viewstate.MainViewState

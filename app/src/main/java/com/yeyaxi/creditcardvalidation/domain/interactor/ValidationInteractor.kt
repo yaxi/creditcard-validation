@@ -1,6 +1,6 @@
 package com.yeyaxi.creditcardvalidation.domain.interactor
 
-import com.yeyaxi.creditcardvalidation.data.CardType
+import com.yeyaxi.creditcardvalidation.domain.CardType
 import com.yeyaxi.creditcardvalidation.domain.Interactor
 import javax.inject.Inject
 import kotlin.math.pow

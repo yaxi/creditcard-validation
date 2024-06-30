@@ -1,6 +1,6 @@
 package com.yeyaxi.creditcardvalidation.presentation.ui.viewstate
 
-import com.yeyaxi.creditcardvalidation.data.CardType
+import com.yeyaxi.creditcardvalidation.domain.CardType
 
 data class MainViewState(
     val cardNum: String = "",
