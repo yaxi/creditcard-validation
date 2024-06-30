@@ -12,6 +12,8 @@ hilt = "2.51.1"
 ksp = "2.0.0-1.0.22"
 coroutines = "1.8.0"
 constraintLayout = "1.0.1"
+mockk = "1.13.11"
+turbine = "1.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,8 +34,10 @@ hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref
 hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
 hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name= "kotlinx-coroutines-android", version.ref = "coroutines"}
-kotlinx-coroutines-android-test = { group = "org.jetbrains.kotlinx", name= "kotlinx-coroutines-android-test", version.ref = "coroutines"}
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name= "kotlinx-coroutines-test", version.ref = "coroutines"}
 constraintlayout-compse = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintLayout" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk"}
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

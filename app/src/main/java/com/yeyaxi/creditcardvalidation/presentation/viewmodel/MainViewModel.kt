@@ -62,7 +62,7 @@ class MainViewModel @Inject constructor(
                 }
 
                 if (sum % 10 != 0) {
-                    setState { copy(error = Throwable("Invalid Number"), cardType = CardType.NONE) }
+                    setState { copy(cardType = CardType.NONE, error = Throwable("Invalid Number")) }
                 } else {
                     if (amex == 34 || amex == 37) {
                         setState { copy(cardType = CardType.AMEX, error = null) }
