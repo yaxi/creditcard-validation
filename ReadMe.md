@@ -1,4 +1,19 @@
-Assets Used
+About
+===
+This validator uses [Luhn Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) to validate the entered card number.
+
+The first few digits are used to determine the type of the card. Currently supported card types are: American Express, Discover, Mastercard, and Visa.
+
+Other valid card numbers will show as "Unknown" type.
+
+Tech Stack
+===
+* Redux/MVVM
+* Compose
+* Hilt
+* Kotlin Coroutines
+
+Credits to Assets
 ===
 
 Icons
