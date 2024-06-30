@@ -1,3 +1,7 @@
+Creditcard Validator
+==
+![](https://github.com/yaxi/creditcard-validation/blob/3c24c73255a02d49a7629e88043c2d79a6265885/app/src/main/ic_launcher-playstore.png)
+
 About
 ===
 This validator uses [Luhn Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) to validate the entered card number.
