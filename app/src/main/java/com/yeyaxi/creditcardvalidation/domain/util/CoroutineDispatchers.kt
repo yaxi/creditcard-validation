@@ -1,4 +1,4 @@
-package com.yeyaxi.creditcardvalidation.domain
+package com.yeyaxi.creditcardvalidation.domain.util
 
 import kotlinx.coroutines.CoroutineDispatcher
 

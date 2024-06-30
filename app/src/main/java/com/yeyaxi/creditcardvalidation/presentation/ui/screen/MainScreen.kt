@@ -1,12 +1,9 @@
 package com.yeyaxi.creditcardvalidation.presentation.ui.screen
 
 import android.content.res.Configuration
-import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
@@ -36,7 +33,7 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.yeyaxi.creditcardvalidation.R
-import com.yeyaxi.creditcardvalidation.domain.CardType
+import com.yeyaxi.creditcardvalidation.data.CardType
 import com.yeyaxi.creditcardvalidation.domain.util.Constants
 import com.yeyaxi.creditcardvalidation.presentation.ui.theme.CreditCardValidationTheme
 import com.yeyaxi.creditcardvalidation.presentation.ui.theme.creditCardFamily

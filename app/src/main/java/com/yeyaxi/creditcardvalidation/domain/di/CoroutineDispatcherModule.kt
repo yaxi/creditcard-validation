@@ -1,6 +1,6 @@
 package com.yeyaxi.creditcardvalidation.domain.di
 
-import com.yeyaxi.creditcardvalidation.domain.CoroutineDispatchers
+import com.yeyaxi.creditcardvalidation.domain.util.CoroutineDispatchers
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
