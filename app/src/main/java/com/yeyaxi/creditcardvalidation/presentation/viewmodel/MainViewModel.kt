@@ -23,28 +23,23 @@ class MainViewModel @Inject constructor(
     val viewState: StateFlow<MainViewState> = _viewState.asStateFlow()
 
     fun validate(num: String) {
-        viewModelScope.launch(dispatchers.main) {
-            setState {
-                if (num.isEmpty()) {
-                    copy(cardNum = "", error = null)
-                } else {
-                    copy(cardNum = num)
-                }
+        setState {
+            if (num.isEmpty()) {
+                copy(cardNum = "", error = null)
+            } else {
+                copy(cardNum = num)
             }
-
         }
+
         if (num.isNotEmpty()) {
             viewModelScope.launch(dispatchers.default) {
                 val result = validationInteractor.invoke(num)
                 result.onSuccess {
-                    viewModelScope.launch(dispatchers.main) {
-                        setState { copy(cardType = it, error = null) }
-                    }
+                    setState { copy(cardType = it, error = null) }
+
                 }
                 result.onFailure {
-                    viewModelScope.launch(dispatchers.main) {
-                        setState { copy(cardType = CardType.NONE, error = it) }
-                    }
+                    setState { copy(cardType = CardType.NONE, error = it) }
                 }
             }
         }
